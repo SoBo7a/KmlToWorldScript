@@ -45,6 +45,7 @@ namespace KmlToWorldScript.Classes
                         }
                         else
                         {
+                            Console.WriteLine();
                             Console.WriteLine($"Invalid waypoint format: {waypointStr}");
                         }
                     }
