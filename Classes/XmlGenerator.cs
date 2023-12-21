@@ -110,16 +110,20 @@ namespace KmlToWorldScript.Classes
 
         private static UserInputs GetUserInputs()
         {
+            Console.WriteLine();
             Console.WriteLine("Enter the description (press Enter for empty):");
             string descr = Console.ReadLine();
 
+            Console.WriteLine();
             Console.WriteLine("Enter the name of the SimObject to use:");
             string containerTitle = Console.ReadLine();
 
+            Console.WriteLine();
             Console.WriteLine("Enter 1 for IsOnGround=true (default), 2 for IsOnGround=false:");
             string isOnGroundInput = Console.ReadLine();
             bool isOnGround = string.IsNullOrEmpty(isOnGroundInput) || isOnGroundInput == "1";
 
+            Console.WriteLine();
             Console.WriteLine("Enter the LocalOffsetXYZ (press Enter for default '0.000,0.000,0.000,0.000'):");
             string localOffsetXYZ = Console.ReadLine();
             if (string.IsNullOrWhiteSpace(localOffsetXYZ))
@@ -127,6 +131,7 @@ namespace KmlToWorldScript.Classes
                 localOffsetXYZ = "0.000,0.000,0.000,0.000";
             }
 
+            Console.WriteLine();
             Console.WriteLine("Enter the LocalOrientation (press Enter for default '0.000,0.000,0.000,0.000'):");
             string localOrientation = Console.ReadLine();
             if (string.IsNullOrWhiteSpace(localOrientation))
@@ -134,9 +139,11 @@ namespace KmlToWorldScript.Classes
                 localOrientation = "0.000,0.000,0.000,0.000";
             }
 
+            Console.WriteLine();
             Console.WriteLine("Please select the AIType:");
             string AIType = GetAIType();
 
+            Console.WriteLine();
             Console.WriteLine("Enter the Container ID (press Enter for default '-1'):");
             string containerIDInput = Console.ReadLine();
             int containerID;
@@ -145,6 +152,7 @@ namespace KmlToWorldScript.Classes
                 containerID = -1;
             }
 
+            Console.WriteLine();
             Console.WriteLine("Enter the GroundCruiseSpeed (press Enter for default '35.000'):");
             string groundCruiseSpeedInput = Console.ReadLine();
             double groundCruiseSpeed;
@@ -161,6 +169,7 @@ namespace KmlToWorldScript.Classes
                 }
             }
 
+            Console.WriteLine();
             Console.WriteLine("Enter the GroundTurnSpeed (press Enter for default '10.000'):");
             string groundTurnSpeedInput = Console.ReadLine();
             double groundTurnSpeed;
@@ -177,6 +186,7 @@ namespace KmlToWorldScript.Classes
                 }
             }
 
+            Console.WriteLine();
             Console.WriteLine("Enter the GroundTurnTime (press Enter for default '3.500'):");
             string groundTurnTimeInput = Console.ReadLine();
             double groundTurnTime;
@@ -193,22 +203,27 @@ namespace KmlToWorldScript.Classes
                 }
             }
 
+            Console.WriteLine();
             Console.WriteLine("Enter 1 for YieldToUser=true (default), 2 for YieldToUser=false:");
             string yieldInput = Console.ReadLine();
             bool yieldToUser = string.IsNullOrEmpty(yieldInput) || yieldInput == "1";
 
+            Console.WriteLine();
             Console.WriteLine("Enter 1 for CanReverse=true, 2 for CanReverse=false (default):");
             string canReverseInput = Console.ReadLine();
             bool canReverse = !string.IsNullOrEmpty(canReverseInput) && canReverseInput == "1";
 
+            Console.WriteLine();
             Console.WriteLine("Enter 1 for KeepLastHeading=true (default), 2 for KeepLastHeading=false:");
             string keepLastHeadingInput = Console.ReadLine();
             bool keepLastHeading = string.IsNullOrEmpty(keepLastHeadingInput) || keepLastHeadingInput == "1";
-
+            
+            Console.WriteLine();
             Console.WriteLine("Enter 1 for WrapWaypoints=true (default), 2 for WrapWaypoints=false:");
             string wrapWaypointsInput = Console.ReadLine();
             bool wrapWaypoints = string.IsNullOrEmpty(wrapWaypointsInput) || wrapWaypointsInput == "1";
 
+            Console.WriteLine();
             Console.WriteLine("Enter the CurrentWaypoint (press Enter for default '0'):");
             string currentWaypointInput = Console.ReadLine();
             int currentWaypoint;
@@ -217,14 +232,17 @@ namespace KmlToWorldScript.Classes
                 currentWaypoint = 0;
             }
 
+            Console.WriteLine();
             Console.WriteLine("Enter 1 for BackupToFirst=true, 2 for BackupToFirst=false (default):");
             string backupToFirstInput = Console.ReadLine();
             bool backupToFirst = !string.IsNullOrEmpty(backupToFirstInput) && backupToFirstInput == "1";
 
+            Console.WriteLine();
             Console.WriteLine("Enter 1 for AlwaysBackup=true, 2 for AlwaysBackup=false (default):");
             string alwaysBackupInput = Console.ReadLine();
             bool alwaysBackup = !string.IsNullOrEmpty(alwaysBackupInput) && alwaysBackupInput == "1";
 
+            Console.WriteLine();
             Console.WriteLine("Enter 1 for (Waypoint) AltitudeIsAGL=true (default), 2 for AltitudeIsAGL=false:");
             string altitudeIsAGLInput = Console.ReadLine();
             bool altitudeIsAGL = string.IsNullOrEmpty(altitudeIsAGLInput) || altitudeIsAGLInput == "1";
@@ -343,6 +361,7 @@ namespace KmlToWorldScript.Classes
                     return "Linked_Object";
 
                 default:
+                    Console.WriteLine();
                     Console.WriteLine($"Invalid input. Defaulting to {defaultAIType}");
                     return defaultAIType;
             }
@@ -364,10 +383,10 @@ namespace KmlToWorldScript.Classes
             try
             {
                 xmlDoc.Save(filePath);
-                Console.WriteLine($"XML file saved successfully at: {filePath}");
             }
             catch (Exception ex)
             {
+                Console.WriteLine();
                 Console.WriteLine($"Error saving XML file: {ex.Message}");
             }
         }

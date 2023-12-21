@@ -24,6 +24,7 @@ namespace KmlToWorldScript
             List<Waypoint> waypoints = KMLReader.ReadKML(kmlFilePath);
 
             // Generate the output XML file path in the "output" subfolder of the application directory
+            Console.WriteLine();
             Console.WriteLine("Enter the name for the generated XML-File (without extension):");
             string outputFileName = Console.ReadLine();
 
@@ -45,7 +46,18 @@ namespace KmlToWorldScript
             // Generate XML and save it to the specified file
             XmlGenerator.GenerateAndSaveXml(waypoints, outputXmlFilePath);
 
+            Console.WriteLine();
             Console.WriteLine($"Output XML file saved to: {outputXmlFilePath}");
+
+            // Wait for user input or count down and close the application
+            Console.WriteLine();
+            Console.WriteLine("Press any key to exit or wait for 10 seconds...");
+            DateTime endTime = DateTime.Now.AddSeconds(10);
+
+            while (DateTime.Now < endTime && !Console.KeyAvailable)
+            {
+                System.Threading.Thread.Sleep(100);
+            }
         }
     }
 }
