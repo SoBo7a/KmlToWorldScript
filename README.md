@@ -11,7 +11,7 @@ The tutorial provides detailed insights on waypoint animations for MSFS and insp
 
 To use the MSFS WorldScript Generator, follow these steps:
 
-1. Download: Obtain the compiled executable (*.exe) from the latest release.
+1. Download: Obtain the tool from the latest [release](https://github.com/SoBo7a/KmlToWorldScript/releases).
 2. Run the App:
 	- Double-click the executable file to run the application.			
 	- Alternatively, open a terminal, navigate to the directory containing the executable, and run it from the command line.
