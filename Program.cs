@@ -16,7 +16,11 @@ namespace KmlToWorldScript
             // Check if the provided KML file exists
             if (!File.Exists(kmlFilePath))
             {
-                Console.WriteLine($"Error: The specified KML file '{kmlFilePath}' does not exist.");
+                Console.WriteLine();
+                Console.WriteLine($"ERROR: The specified KML file '{kmlFilePath}' does not exist.");
+                Console.WriteLine();
+                Console.WriteLine("Press any key to close the application...");
+                Console.ReadKey();
                 return;
             }
 
