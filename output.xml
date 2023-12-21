@@ -1,0 +1,135 @@
+<SimBase.Document Type="MissionFile" version="1.0">
+  <Filename>train-script</Filename>
+  <WorldBase.Flight>
+    <SimContain.Container InstanceID="{f7b3c44a-defd-45e2-b0b4-cfe74b266502}">
+      <Descr>EDAA-Train</Descr>
+      <ContainerTitle>train_animated_EDAA_SO</ContainerTitle>
+      <IsOnGround>True</IsOnGround>
+      <LocalOffsetXYZ>0.000,0.000,0.000,0.000</LocalOffsetXYZ>
+      <LocalOrientation>0.000,0.000,0.000,0.000</LocalOrientation>
+      <AIType>GroundVehicle</AIType>
+      <ContainerID>-1</ContainerID>
+      <SimplifiedSimMode>AI</SimplifiedSimMode>
+      <ParameterAI>
+        <GroundCruiseSpeed>7.000</GroundCruiseSpeed>
+        <GroundTurnSpeed>7.000</GroundTurnSpeed>
+        <GroundTurnTime>0.500</GroundTurnTime>
+        <YieldToUser>False</YieldToUser>
+        <CanReverse>False</CanReverse>
+        <KeepLastHeading>False</KeepLastHeading>
+        <WaypointList>
+          <WrapWaypoints>True</WrapWaypoints>
+          <CurrentWaypoint>0</CurrentWaypoint>
+          <BackupToFirst>False</BackupToFirst>
+          <AlwaysBackup>False</AlwaysBackup>
+          <YieldToUser>False</YieldToUser>
+          <Waypoint InstanceID="{5a4048dd-0827-4ba7-9d88-c0848fe478b7}">
+            <Descr>Waypoint 1</Descr>
+            <WaypointID>0</WaypointID>
+            <WorldPosition>48.4575730670486,11.12055641258715,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+          <Waypoint InstanceID="{b2f97120-e6d7-4972-a7d9-8d4f2ac5b01d}">
+            <Descr>Waypoint 2</Descr>
+            <WaypointID>1</WaypointID>
+            <WorldPosition>48.45876249688418,11.12134363059172,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+          <Waypoint InstanceID="{6201a894-4caa-4bde-91e6-08bdb0c8f86a}">
+            <Descr>Waypoint 3</Descr>
+            <WaypointID>2</WaypointID>
+            <WorldPosition>48.46032786005164,11.1223260475431,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+          <Waypoint InstanceID="{439c0eed-83da-459a-8718-5c0f8931a758}">
+            <Descr>Waypoint 4</Descr>
+            <WaypointID>3</WaypointID>
+            <WorldPosition>48.46198946039698,11.12336807696178,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+          <Waypoint InstanceID="{836508b0-97d3-418e-a95b-ea8c21190ee1}">
+            <Descr>Waypoint 5</Descr>
+            <WaypointID>4</WaypointID>
+            <WorldPosition>48.46262531490473,11.123765330355,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+          <Waypoint InstanceID="{61bee320-8274-4342-9b54-dc36525f6cdc}">
+            <Descr>Waypoint 6</Descr>
+            <WaypointID>5</WaypointID>
+            <WorldPosition>48.4628347388212,11.12387841045065,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+          <Waypoint InstanceID="{f94c55a2-4c89-45ba-892a-c1a6ff71966f}">
+            <Descr>Waypoint 7</Descr>
+            <WaypointID>6</WaypointID>
+            <WorldPosition>48.46332234972224,11.12411743924011,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+          <Waypoint InstanceID="{cd98f8c1-c559-4c3e-b9c4-7556b1492f80}">
+            <Descr>Waypoint 8</Descr>
+            <WaypointID>7</WaypointID>
+            <WorldPosition>48.46455290988764,11.12489786578154,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+          <Waypoint InstanceID="{29f66576-f15c-4226-bd9a-9b909056a8cb}">
+            <Descr>Waypoint 9</Descr>
+            <WaypointID>8</WaypointID>
+            <WorldPosition>48.46672593201648,11.12627369162007,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+          <Waypoint InstanceID="{7ad123bf-2764-46d0-8dc0-b739e3d52d64}">
+            <Descr>Waypoint 10</Descr>
+            <WaypointID>9</WaypointID>
+            <WorldPosition>48.46875654001153,11.12753680616861,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+          <Waypoint InstanceID="{edd9d2fa-9b58-4421-9e29-4df6240819ed}">
+            <Descr>Waypoint 11</Descr>
+            <WaypointID>10</WaypointID>
+            <WorldPosition>48.47198633478019,11.12930315754607,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+          <Waypoint InstanceID="{9c8f6e1e-7c09-41a3-b473-c9562fb59604}">
+            <Descr>Waypoint 12</Descr>
+            <WaypointID>11</WaypointID>
+            <WorldPosition>48.47464620205021,11.13067941898726,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+          <Waypoint InstanceID="{c773c4fc-4bf1-4254-99e6-32ec12167bf7}">
+            <Descr>Waypoint 13</Descr>
+            <WaypointID>12</WaypointID>
+            <WorldPosition>48.47801907575845,11.13244629032564,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+          <Waypoint InstanceID="{ae8206a3-020f-4b5d-8e9d-f73836bf1658}">
+            <Descr>Waypoint 14</Descr>
+            <WaypointID>13</WaypointID>
+            <WorldPosition>48.48222573194747,11.13463724163778,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+          <Waypoint InstanceID="{f1c3d4fa-93a5-42bc-ba46-4df2da71fb3d}">
+            <Descr>Waypoint 15</Descr>
+            <WaypointID>14</WaypointID>
+            <WorldPosition>48.48506316869184,11.13614707515299,+000000.0</WorldPosition>
+            <AltitudeIsAGL>True</AltitudeIsAGL>
+            <IsTeleportEnable>False</IsTeleportEnable>
+          </Waypoint>
+        </WaypointList>
+      </ParameterAI>
+    </SimContain.Container>
+  </WorldBase.Flight>
+</SimBase.Document>
